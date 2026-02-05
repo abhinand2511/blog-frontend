@@ -84,7 +84,25 @@ export const blockContentType = defineType({
     ],
   },
 
-  
+  {
+    title: 'Highlight Color',
+    name: 'bgColor',
+    type: 'object',
+    fields: [
+      {
+        name: 'background',
+        title: 'Background',
+        type: 'string',
+        options: {
+          list: [
+            { title: 'Yellow', value: '#FEF3C7' },
+            { title: 'Green', value: '#DCFCE7' },
+            { title: 'Blue', value: '#DBEAFE' },
+          ],
+        },
+      },
+    ],
+  },
 ],
       },
     }),
